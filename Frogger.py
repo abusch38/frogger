@@ -3,14 +3,7 @@ from tkinter import *
 import time
 import random
 
-###################################
-#Known bugs
-#There are times the draw function for the frog gets confused
-# and the frog flies around the screen.
 
-#Create a game.win_the_game() function
-#create a frog.cheat() function which fills in all of the lily pads
-#so I can test the end of the game functions without having to play the entire game.
 ###################################
 
 class Frog(object):
