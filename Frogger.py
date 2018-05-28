@@ -409,6 +409,7 @@ class Car(object):
         
         #initializes the speed
         self.x = 4
+        self.set_up_cars(canvas)
 
     def set_up_cars(self, canvas):
         #self.set_up_cars_row(canvas, color, row #, car type, x speed)
@@ -524,6 +525,7 @@ class Log(object):
         
         #initializes the speed
         self.x = 4
+        self.set_up_logs(canvas)
 
     def set_up_logs(self, canvas):
         #self.set_up_logs_row(canvas, color, row #, log type, x speed)
@@ -794,12 +796,8 @@ window_setup(canvas)
 
 #defines all the objects on the screen
 car = Car(canvas)
-car.set_up_cars(canvas)
 log = Log(canvas)
-log.set_up_logs(canvas)
-
 score = Score(canvas, "blue")
-
 frog = Frog(canvas, "green", score, car, log)
 game = Game(canvas, frog, car, log, score)
 
